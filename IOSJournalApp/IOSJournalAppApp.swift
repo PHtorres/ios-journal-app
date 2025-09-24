@@ -11,7 +11,8 @@ import SwiftUI
 struct IOSJournalAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            JournalListScreen()
         }
+        .modelContainer(for: JournalEntry.self)
     }
 }
